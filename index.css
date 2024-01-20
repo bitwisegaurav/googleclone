@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro&family=Roboto+Slab:wght@400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+nav {
+  width: 100%;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  /* border: 2px solid red; */
+  padding: 10px;
+}
+
+nav ul li {
+  margin: 0 12px;
+  color: rgb(99, 99, 99);
+  /* border: 2px solid red; */
+  list-style: none;
+  /* font-size: small; */
+  height: 1rem;
+  cursor: pointer;
+}
+.underline:hover {
+  text-decoration: underline;
+}
+#apps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  height: 1rem;
+  width: 1rem;
+}
+#apps:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 100%;
+}
+#id {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  height: 1rem;
+  width: 1rem;
+  font-size: larger;
+  font-family: "Readex Pro", sans-serif;
+  border-radius: 100%;
+  background-color: rgb(0, 151, 167);
+  color: white;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid red; */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name {
+  display: flex;
+  align-items: flex-end;
+  font-size: 6rem;
+  margin-top: 8rem;
+  font-family: "Readex Pro", sans-serif;
+  pointer-events: none;
+  cursor: none;
+}
+.big {
+  font-size: 7rem;
+  font-weight: lighter;
+}
+.red {
+  color: rgb(255, 37, 37);
+}
+
+.blue {
+  color: rgb(61, 138, 253);
+}
+
+.yellow {
+  color: rgb(252, 201, 35);
+}
+
+.green {
+  color: rgb(47, 138, 47);
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  width: 35rem;
+  padding: 0 1rem;
+  border-radius: 2rem;
+  border-style: hidden;
+  margin: 1.6rem;
+  background-color: white;
+  color: rgb(99, 99, 99);
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+}
+.search i {
+  cursor: default;
+}
+.search img {
+  cursor: pointer;
+}
+.search input {
+  font-size: large;
+  margin: 0 1rem;
+  padding: 0.6rem 0;
+  width: 85%;
+  font-weight: 500;
+  font-size: 17px;
+  border: none;
+  outline: none;
+}
+.search input:focus::placeholder {
+  color: transparent;
+}
+.search .googlemic {
+  width: 25px;
+}
+.refer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  justify-content: center;
+}
+
+.box {
+  width: 6rem;
+  height: 5.5rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  justify-content: space-between;
+  align-items: center;
+}
+.box:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(241 243 244);
+  width: 3rem;
+  height: 3rem;
+  /* border: 2px solid red; */
+  border-radius: 100%;
+}
+.title {
+  font-size: small;
+  font-family: "Roboto Slab", serif;
+}
+@media screen and (max-width: 900px) {
+  .refer {
+    width: 80%;
+  }
+  .search {
+    width: 60vw;
+  }
+}
